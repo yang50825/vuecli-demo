@@ -18,12 +18,15 @@ export default {
   },
   methods: {
     revBtn() {
+      // 1.改变原数组：直接写
       this.arr.reverse()
     },
     sliceBtn() {
+      // 2.返回新数组，重新赋值
       this.arr = this.arr.slice(0, 3)
     },
     updateBtn() {
+      // 替换值 $set
       this.$set(this.arr, 0, 1000)
     },
   },
